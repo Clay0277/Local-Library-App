@@ -20,10 +20,9 @@ function getBorrowersForBook(book, accounts) {
      let accountInfo = accounts.find(account => borrow.id === account.id);
       accountInfo.returned = borrow.returned
        return accountInfo }).slice(0,10)
-        return bookBorrowInfo }
-  //determine which accounts in the account object match the given book's ids
-  //store the matching elements in an array
-  //include the return status of each book 
+        return bookBorrowInfo;
+      }
+  
 
 
 module.exports = {
